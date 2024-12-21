@@ -27,3 +27,7 @@ Este prototipo consiste en una vista con páginas estáticas diseñadas para rep
    ```bash
    git clone https://github.com/tuusuario/izitech.git
 2. Abre el archivo index.html en tu navegador para explorar el prototipo.
+
+## Autor
+
+Liz Karol Vergara
