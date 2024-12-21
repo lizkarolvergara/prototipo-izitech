@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Izitech</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/loguito.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+ 
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google fonts añadido por Liz -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container px-4 px-lg-5" >
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/izitech.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item "><a class="nav-link active" aria-current="page" href="views/login.html">Inicia Sesión</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="views/singup.html">Regístrate</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <li><a class="dropdown-item" href="views/category.html">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="views/category.html">Laptops</a></li>
+                                <li><a class="dropdown-item" href="views/category.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="views/cart.html" class="btn">
+                            <i class="bi-cart-fill me-1"></i>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- modal -->
+        <div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                  <h5 class="modal-title" id="discountModalLabel">IMPERDIBLE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <p>¡Aprovecha ahora y obtén hasta un <strong>20% de descuento</strong> en todos los celulares!</p>
+                  <img src="images/modal.jpg" alt="Descuento en celulares" class="img-fluid rounded">
+                  <p class="mt-3">Oferta válida hasta el 31 de diciembre. ¡No te lo pierdas!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- Section-->
+        <!--<section> class="py-5" -->
+            <!-- <a href="#">
+                <img src="images/banners/1.png" alt="" class="w-100">
+            </a> -->
+        <head>
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel" style="margin-top: 60px;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="views/category.html"><img src="images/banners/1.png" class="d-block w-100" alt="..."></a>                   
+                  </div>
+                  <div class="carousel-item">
+                    <a href="views/category.html"><img src="images/banners/4.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="views/category.html"><img src="images/banners/5.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                </div>
+            </div>
+        </head>
+        <section>
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">-18%</div>
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/celulares/1.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 14</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">S/ 4,000</span>
+                                    S/ 3,299
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">-16%</div>
+                            <!-- Product image-->
+                            <a href="views/product.html" class=""><img class="card-img-top" src="images/celulares/2.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Galaxy A55</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">S/ 1,899</span>
+                                    S/ 1,599
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">-15%</div>
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/celulares/3.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Moto G24</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">S/ 799</span>
+                                    S/ 679
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">-20%</div>
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/celulares/4.png" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Redmi Note 13</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">S/ 949</span>
+                                    S/ 800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a class="btn btn-outline-dark mt-auto btn-fondo" href="views/category.html">Ver todo </a></div>
+            </div>
+        </section>
+        <section>
+            <a href="#">
+                <img src="images/banners/2.png" alt="" class="w-100">
+            </a>
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/laptops/1.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">HP Victus Gaming 15 AMD Ryzen 7</h5>
+                                    <!-- Product price-->
+                                    S/ 3,400
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/laptops/2.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Asus ROG Strix AMD Ryzen 9</h5>
+                                    <!-- Product price-->
+                                    S/ 6,800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/laptops/4.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">MSI Thin 15 RTX 4060</h5>
+                                    <!-- Product price-->
+                                    S/ 6,000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/laptops/5.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Lenovo Legion 5i Intel Core i7</h5>
+                                    <!-- Product price-->
+                                    S/ 7,100
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a class="btn btn-outline-dark mt-auto btn-fondo" href="views/category.html">Ver todo </a></div>
+            </div>
+        </section>
+        <section>
+            <a href="#">
+                <img src="images/banners/3.png" alt="" class="w-100">
+            </a>
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/accesorios/1.png" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Teclado Gamer Xtrike</h5>
+                                    <!-- Product price-->
+                                    S/ 70
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/accesorios/2.jpg" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mouse Gamer Xtrike</h5>
+                                    <!-- Product price-->
+                                    S/ 30
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/accesorios/3.png" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Memoria USAMS 32gb</h5>
+                                    <!-- Product price-->
+                                    S/ 50
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="views/product.html"><img class="card-img-top" src="images/accesorios/4.png" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camara Web Logitech</h5>
+                                    <!-- Product price-->
+                                    S/ 80
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a class="btn btn-outline-dark mt-auto btn-fondo" href="views/category.html">Ver todo</a></div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <!-- <footer class="py-5 bg-dark1">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Izitech 2024</p></div>
+        </footer> -->
+        <footer class="bg-dark1 py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-md-3">
+                        <a href="index.html">
+                            <img src="images/izitech.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                        </a>
+                    </div>
+        
+                    <!-- Enlaces -->
+                    <div class="col-md-3">
+                        <h5>Atención al cliente</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Preguntas frecuentes</a></li>
+                            <li><a href="#!" class="text-dark">Métodos de pago</a></li>
+                            <li><a href="#!" class="text-dark">Políticas de privacidad</a></li>
+                            <li><a href="#!" class="text-dark">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Opciones de contacto u otras -->
+                    <div class="col-md-3">
+                        <h5>Sobre nostros</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Nosotros</a></li>
+                            <li><a href="#!" class="text-dark">Contacto</a></li>
+                            <li><a href="#!" class="text-dark">Redes sociales</a></li>
+                            <li><a href="#!" class="text-dark">Facturación electrónica</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Mi cuenta</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Mis datos</a></li>
+                            <li><a href="#!" class="text-dark">Mis direcciones</a></li>
+                            <li><a href="#!" class="text-dark">Mis pedidos</a></li>
+                            <li><a href="#!" class="text-dark">Club Izitech</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-muted">&copy; 2024 Izitech. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Finalizar la compra | Izitech</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/loguito.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <!-- Google fonts añadido por Liz -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/izitech.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item "><a class="nav-link active" aria-current="page" href="login.html">Inicia Sesión</a></li>
+                        <li class="nav-item"><a class="nav-link  active" href="singup.html">Regístrate</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <li><a class="dropdown-item" href="category.html">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="category.html">Laptops</a></li>
+                                <li><a class="dropdown-item" href="category.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="cart.html" class="btn">
+                            <i class="bi-cart-fill me-1"></i>
+                            <!-- <span class="badge bg-dark text-white ms-1 rounded-pill">0</span> -->
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5">
+            <div class="row">
+                <!-- Formulario de Envío -->
+                <div class="col-md-8">
+                    <h4 class="mb-3">Información de envío</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Ejemplo: Juan Pérez" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="Ejemplo: Calle Los Rosales 123" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="city" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="city" placeholder="Ejemplo: Lima" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="state" class="form-label">Estado/Región</label>
+                                <input type="text" class="form-control" id="state" placeholder="Ejemplo: Lima Metropolitana" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="zip" class="form-label">Código postal</label>
+                                <input type="text" class="form-control" id="zip" placeholder="Ejemplo: 15001" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Ejemplo: +51 987 654 321" required>
+                            </div>
+                        </div>
+                        <a href="payment.html" class="btn btn-outline-dark flex-shrink-0 btn-fondo">Continuar al pago</a>
+
+                    </form>
+                </div>
+        
+                <!-- Resumen de la compra -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header fw-bold">
+                            Resumen de la compra
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-3 p-0">
+                                <li class="d-flex align-items-center mb-3">
+                                    <span class="flex-grow-1 text-truncate">iPhone 14 128gb</span>
+                                    <span class="text-muted">S/4,000.00</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <span class="flex-grow-1 text-truncate">Teclado Gamer Xtrike Me</span>
+                                    <span class="text-muted">S/70.00</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <span class="flex-grow-1 text-truncate">Laptop HP Victus Gaming</span>
+                                    <span class="text-muted">S/3,400.00</span>
+                                </li>
+                            </ul>
+
+                            <hr class="my-2">
+                            <p class="d-flex justify-content-between">
+                                <span>Subtotal:</span>
+                                <span>S/7,470.00</span>
+                            </p>
+                            <p class="d-flex justify-content-between">
+                                <span>Descuento:</span>
+                                <span>-S/701.00</span>
+                            </p>
+                            <hr>
+                            <p class="d-flex justify-content-between fw-bold">
+                                <span>Total:</span>
+                                <span>S/6,769.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer-->
+        <footer class="bg-dark1 py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-md-3">
+                        <a href="../index.html">
+                            <img src="../images/izitech.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                        </a>
+                    </div>
+        
+                    <!-- Enlaces -->
+                    <div class="col-md-3">
+                        <h5>Atención al cliente</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Preguntas frecuentes</a></li>
+                            <li><a href="#!" class="text-dark">Métodos de pago</a></li>
+                            <li><a href="#!" class="text-dark">Políticas de privacidad</a></li>
+                            <li><a href="#!" class="text-dark">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Opciones de contacto u otras -->
+                    <div class="col-md-3">
+                        <h5>Sobre nostros</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Nosotros</a></li>
+                            <li><a href="#!" class="text-dark">Contacto</a></li>
+                            <li><a href="#!" class="text-dark">Redes sociales</a></li>
+                            <li><a href="#!" class="text-dark">Facturación electrónica</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Mi cuenta</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-dark">Mis datos</a></li>
+                            <li><a href="#!" class="text-dark">Mis direcciones</a></li>
+                            <li><a href="#!" class="text-dark">Mis pedidos</a></li>
+                            <li><a href="#!" class="text-dark">Club Izitech</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-muted">&copy; 2024 Izitech. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
